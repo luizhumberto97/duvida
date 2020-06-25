@@ -5,6 +5,7 @@ import signInBackgroundImg from '../../assets/sign-in-background.png';
 
 export const Container = styled.div `
   height: 100vh; /* Caber tudo na tela */
+
   display:flex;
   align-items: stretch;  /* Estica ao maximo que puder */
 
@@ -13,14 +14,15 @@ export const Container = styled.div `
 export const Content = styled.div `
   display: flex;
   flex-direction: column; /* Coluna  a logo com o formulario */
-  justify-content: center;
+
   align-items: center;
+  place-content: center;
 
   width: 100%;
   max-width: 700px;
 
   form{
-    margin: 80px;
+    margin: 80px 0;
     width: 340px;
     text-align: center;
 
